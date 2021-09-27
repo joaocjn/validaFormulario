@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="title">Formulário de cadastro</div>   
+    <div class="boxFormularioEnviado">
+      <div class="titleBoxEnviado">Formulário Enviado!</div>
+      <div class="barBoxEnviado"></div>
+    </div>
+
+    <form action="" method="POST" id="formulario">
+      <div class="formTop">
+        <div class="formTop-Left">
+          <label>Nome</label>
+          <input type="text" class="nome validar" placeholder="Seu nome">
+        </div>
+        
+        <div class="formTop-Right">
+          <label>Sobrenome</label>
+          <input type="text" class="sobrenome validar" placeholder="Seu sobrenome">
+        </div>      
+      </div>
+      
+      <label>Usuário</label>
+      <input type="text" class="usuario validar" placeholder="Seu usuário">
+
+      <label>CPF</label>
+      <input type="text" class="cpf validar" placeholder="Seu CPF">
+  
+      <div class="formSenha">
+        <label>Senha</label>
+        <input type="password" class="senha validar" placeholder="Sua senha">
+        <div class="buttonMostrarSenha"></div>
+      </div>
+      
+      <div class="formRepetirSenha">
+        <label>Repetir Senha</label>
+        <input type="password" class="repetirSenha validar" placeholder="Repetir sua senha">
+        <div class="buttonMostrarSenha"></div>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="validaCPF.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
